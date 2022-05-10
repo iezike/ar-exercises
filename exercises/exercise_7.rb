@@ -18,3 +18,16 @@ Employee.validates :store_id, presence: true
 Store.validates :name, length: { minimum: 3 }
 Store.validates :annual_revenue, numericality: { greater_than_or_equal_to: 0}
 
+@name = gets.chomp
+newStore = Store.create(name: @name)
+puts newStore.errors.full_messages
+
+#@name = gets.chomp
+# @annual_revenue = gets.chomp
+# @mens_apparel = gets.chomp
+# @womens_apparel = gets.chomp
+
+
+# newStore = Store.create(name: @name, annual_revenue: @annual_revenue, mens_apparel: @mens_apparel, womens_apparel: @womens_apparel)
+
+# puts newStore.name
