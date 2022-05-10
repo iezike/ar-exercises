@@ -10,3 +10,5 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+Employee.validates :first_name, presence: true
+Employee.validates :last_name, presence: true
