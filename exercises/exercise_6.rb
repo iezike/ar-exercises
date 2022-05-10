@@ -13,5 +13,14 @@ Store.has_many :employees
 Employee.belongs_to :store
 
 @store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
+@store1.employees.create(first_name: "Ken", last_name: "Kim", hourly_rate: 55)
+
+
+@store2.employees.create({first_name: "Ken", last_name: "Kim", hourly_rate: 55})
+@store2.employees.create(first_name: "Ike", last_name: "Ezi", hourly_rate: 70)
+@store2.employees.each do |e|
+  puts e.hourly_rate
+end
+
 
 
