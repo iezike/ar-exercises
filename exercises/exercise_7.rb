@@ -16,3 +16,5 @@ Employee.validates :hourly_rate, numericality: { greater_than_or_equal_to: 40, l
 Employee.validates :store_id, presence: true
 
 Store.validates :name, length: { minimum: 3 }
+Store.validates :annual_revenue, numericality: { greater_than_or_equal_to: 0}
+
